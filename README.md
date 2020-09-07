@@ -1,5 +1,5 @@
 # Anidb
 An Unofficial AniDB API
 
-#Install
+# Install
 ```composer require gloire/anidb```
