@@ -1,0 +1,21 @@
+{
+    "name": "gloire/anidb",
+    "description": "An Unofficial AniDB API",
+    "type": "api",
+    "require-dev": {
+        "cloudinary/cloudinary_php": "^1.18"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "gloire",
+            "email": "gloireTR@hotmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "AniDB\\Anime\\Main\\": "src/anime"
+        }
+    }
+}
