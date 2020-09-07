@@ -1,3 +1,4 @@
+[![GitHub license](https://img.shields.io/github/license/gloireTR/Anidb)](https://github.com/gloireTR/Anidb/blob/master/LICENSE)
 # Anidb
 An Unofficial AniDB API
 
