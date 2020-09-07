@@ -1,5 +1,5 @@
 [![GitHub license](https://img.shields.io/github/license/gloireTR/Anidb)](https://github.com/gloireTR/Anidb/blob/master/LICENSE) 
-[![Discord](https://img.shields.io/discord/294580763742044160.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/BpyXwF)
+[![Discord](https://img.shields.io/discord/294580763742044160.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://anisekai.com/discord/invite/anisekai_discord_server/)
 # Anidb
 An Unofficial AniDB API
 
