@@ -15,9 +15,9 @@ require_once "vendor/autoload.php";
 use Anidb\Anime\Patterns\Patterns;
 
 \Cloudinary::config(array(
-    "cloud_name" => "sefacicekli",
-    "api_key" => "916329863268252",
-    "api_secret" => "fjyRnhkAtK8OE9PQvzp3YwuJVMo",
+    "cloud_name" => "name",
+    "api_key" => "key",
+    "api_secret" => "secret",
     "secure" => true
 ));
 
