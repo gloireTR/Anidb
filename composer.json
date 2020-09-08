@@ -11,7 +11,9 @@
         }
     ],
     "require": {
-        "cloudinary/cloudinary_php": "^1.18"
+        "cloudinary/cloudinary_php": "^1.18",
+        "ext-curl": "*",
+        "ext-json": "*"
     },
     "autoload": {
         "psr-4": {
