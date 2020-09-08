@@ -3,6 +3,7 @@
     "description": "An Unofficial AniDB API",
     "type": "api",
     "license": "MIT",
+    "minimum-stability" : "dev"
     "authors": [
         {
             "name": "gloire",
