@@ -18,7 +18,7 @@
     "autoload": {
         "psr-4": {
             "AniDB\\Anime\\Main\\": "src/anime",
-            "classmap": ["src/"]
+            "classmap": ["src/anime/"]
         }
     }
 }
