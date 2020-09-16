@@ -3,7 +3,6 @@
     "description": "An Unofficial AniDB API",
     "type": "api",
     "license": "MIT",
-    "minimum-stability" : "dev",
     "authors": [
         {
             "name": "gloire",
@@ -11,11 +10,11 @@
         }
     ],
     "require": {
-        "cloudinary/cloudinary_php": "^1.18",
+        "cloudinary/cloudinary_php": "^1.18"
     },
     "autoload": {
         "psr-4": {
-         "AniDB\\" : "src/",
+            "AniDB\\": "src/"
+        }
     }
-  }
 }
