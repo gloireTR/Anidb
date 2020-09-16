@@ -15,7 +15,6 @@ require_once __DIR__ . '\options.php';
 
 final class Anime extends Options
 {
-    const TEST = 'deneme';
     public function setAnimeID($aid)
     {
         $this->aid = $aid;
