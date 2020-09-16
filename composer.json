@@ -14,8 +14,8 @@
         "cloudinary/cloudinary_php": "^1.18",
     },
     "autoload": {
-    "psr-4": {
-      "AniDB\\" : "src/"
+        "psr-4": {
+         "AniDB\\" : "src/",
     }
   }
 }
