@@ -12,13 +12,10 @@
     ],
     "require": {
         "cloudinary/cloudinary_php": "^1.18",
-        "ext-curl": "*",
-        "ext-json": "*"
     },
     "autoload": {
-        "psr-4": {
-            "AniDB\\Anime\\Main\\": "src/anime",
-            "classmap": ["src/anime/"]
-        }
+    "psr-4": {
+      "AniDB\\" : "src/"
     }
+  }
 }
