@@ -1,7 +1,7 @@
 <?php
 /**
- * Class Patterns
- * @brief Patterns
+ * Class AnidbAnime
+ * @brief Variables
  * @author gloire
  * @author libero1i
  * @link https://anisekai.com
@@ -10,7 +10,7 @@
  * @license http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 
-namespace Anidb\Anime\Patterns;
+namespace Anidb\Anime;
 
 class Patterns{
     /**
