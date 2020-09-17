@@ -10,7 +10,7 @@
  * @license http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 namespace AniDB\Anime;
-require_once __DIR__ . '\patterns.php';
+require_once __DIR__ . '/patterns.php';
 require_once "vendor/autoload.php";
 
 \Cloudinary::config(array(
@@ -42,32 +42,32 @@ class Options extends Patterns{
      * @brief unset url
      * @brief düzenlenmemiş url
      */
-    public string $url;
+    public $url;
     /**
      * @var string
      * @brief Anime ID
      * @brief Anime ID
      */
-    protected string $aid;
+    protected $aid;
 
     /**
      * @var string
      * @brief HTML
      */
-    protected string $html;
+    protected $html;
     /**
      * @var string
      * @brief Anime Title
      * @brief Anime Adı
      */
-    public string $title;
+    public $title;
 
     /**
      * @var string
      * @brief Anime Image
      * @brief Anime Kapak Resmi
      */
-    public string $image;
+    public $image;
 
     /**
      * @var mixed
@@ -81,13 +81,13 @@ class Options extends Patterns{
      * @brief Tags
      * @brief Türler
      */
-    public array $tags;
+    public $tags;
 
     /**
      * @var string $startDate   Starting Date to Anime | Animenin başlama tarihi
      * @var string $endDate     Ending Date            | Animenin bitiş tarihi
      */
-    public string $startDate, $endDate;
+    public $startDate, $endDate;
 
     /**
      * @var mixed
@@ -99,7 +99,7 @@ class Options extends Patterns{
      * @var string
      * @brief Anime Description | Anime açıklaması
      */
-    public string $description;
+    public $description;
 
     /**
      * @var mixed
@@ -125,29 +125,29 @@ class Options extends Patterns{
      * @var array
      * @brief Directly Related Animes | Bağlantılı Animeler
      */
-    public array $directylyRelatedAnime;
+    public $directylyRelatedAnime;
 
     /**
      * @var array
      * @brief Similar Animes | Benzer Animeler
      */
-    public array $similarAnimes;
+    public $similarAnimes;
 
     /**
      * @var array
      * @brief Cast | Seslendirenler
      */
-    public array $cast;
+    public $cast;
 
     /**
      * @var array
      * @brief Staff | Yapım Ekibi
      */
-    public array $staff;
+    public $staff;
 
     /**
      * @var array
      * @brief Anime Characters | Anime Karakterleri
      */
-    public array $characters;
+    public $characters;
 }
