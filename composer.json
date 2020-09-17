@@ -9,7 +9,7 @@
             "email": "gloireTR@hotmail.com"
         }
     ],
-    "require": {
+   "require": {
         "cloudinary/cloudinary_php": "^1.18"
     },
     "config": {
