@@ -2,6 +2,9 @@
     "name": "gloire/anidb",
     "description": "An Unofficial AniDB API",
     "type": "api",
+    "require-dev": {
+        "cloudinary/cloudinary_php": "^1.18"
+    },
     "license": "MIT",
     "authors": [
         {
@@ -9,12 +12,16 @@
             "email": "gloireTR@hotmail.com"
         }
     ],
-    "require": {
-        "cloudinary/cloudinary_php": "^1.18"
+    "require": {},
+    "config": {
+        "optimize-autoloader": true
     },
     "autoload": {
         "psr-4": {
             "AniDB\\": "src/"
-        }
+        },
+        "classmap": [
+            "src/"
+        ]
     }
 }
