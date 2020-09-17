@@ -11,7 +11,7 @@
  */
 namespace AniDB\Anime;
 
-require_once __DIR__ . '\options.php';
+require_once __DIR__ . '/options.php';
 
 final class Anime extends Options
 {
