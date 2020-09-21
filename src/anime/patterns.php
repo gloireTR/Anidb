@@ -122,8 +122,8 @@ class Patterns{
      * @brief Second Pattern for Cast | Seslendirme Ekibi için Kullanılcak İkinci Desen
      */
     const PATTERN_SECOND_CAST = '@(.*?)<td class="name creator"><a href="/creator/(.*?)">(.*?)</a>(.*?)<td class="name char character"><a href="/character/(.*?)">(.*?)</a>(.*?)@si';
-
-    /**
+    
+     /**
      * @brief Pattern for Staff | Yapım Ekibi için Desen
      */
     const PATTERN_STAFF = '@<td class="credit"><a href="/creator/\?credit=(.*?)">(.*?)</a>(.*?)<div class="g_bubble g_section desc resized"@si';
@@ -131,27 +131,12 @@ class Patterns{
     /**
      * @brief Second Pattern for Staff | Yapım Ekibi için Kullanılacak İkinci Desen
      */
-    const PATTERN_SECOND_STAFF = '@<td class="credit"><a href="/creator/\?credit=(.*?)">(.*?)</a>@si';
-
-    /**
-     * @brief Patternf for Directors Staff | Direktör Ekibi için Kullanılacak Desen
-     */
-    const PATTERN_STAFF_DIRECTORS = '@<td class="name creator">(.*?)<a itemprop="director" itemscope itemtype="http://schema.org/Person"  href="/creator/(.*?)"><span class="hide" itemprop="url" content="https://anidb.net/cr(.*?)"></span><span itemprop="name">(.*?)</span></a>(.*?)<div class="g_bubble g_section desc resized" itemprop="description">@si';
-
-    /**
-     * @brief Second Pattern for Directors Staff | Direktör Ekibi için Kullanılacak İkinci Desen
-     */
-    const PATTERN_SECOND_DIRECTORS = '@<a itemprop="director" itemscope itemtype="http://schema.org/Person"  href="/creator/(.*?)"><span class="hide" itemprop="url" content="https://anidb.net/cr(.*?)"></span><span itemprop="name">(.*?)</span></a>@si';
+    const PATTERN_SECOND_STAFF = '@<div class="g_section g_bubble staff">(.*?)<div class="container">(.*?)</tbody>@si';
 
     /**
      * @brief Pattern for Main Staff | Ana Yapım Ekibi için Desen
      */
-    const PATTERN_MAIN_STAFF = '@<td class="credit">(.*?)<td class="name creator"><a href="/creator/(.*?)">(.*?)</a>(.*?)<div class="g_bubble g_section desc resized"@si';
-
-    /**
-     * @brief Second Pattern for Main Staff | Ana Yapım Ekibi için İkinci Desen
-     */
-    const PATTERN_SECOND_MAIN_STAFF = '@<td class="name creator"><a href="/creator/(.*?)">(.*?)</a>@si';
+    const PATTERN_MAIN_STAFF = '@<td class="credit">(.*?)</tr>@si';
 
     /**
      * @brief Pattern for Characters | Karakterler için Desen
