@@ -10,6 +10,7 @@
  * @license http://www.opensource.org/licenses/mit-license.html  MIT License
  */
 namespace AniDB\Anime;
+use DOMDocument;
 
 require_once __DIR__ . '/options.php';
 
@@ -272,49 +273,60 @@ final class Anime extends Options
             $this->staff = ['-', 'N/A'];
             return $this->staff;
         } else {
-            preg_match_all(parent::PATTERN_SECOND_STAFF, $exArray[3][0], $exArray);
-            array_unshift($exArray[1], $firstId);
-            array_unshift($exArray[2], $firstName);
-            preg_match_all(parent::PATTERN_STAFF_DIRECTORS, $this->html, $directorsArray);
-            $firstDirectId = $directorsArray[3][0];
-            $firstDirectName = $directorsArray[4][0];
-            preg_match_all(parent::PATTERN_SECOND_DIRECTORS, $directorsArray[5][0], $directorsArray);
-            array_unshift($directorsArray[2], $firstDirectId);
-            array_unshift($directorsArray[3], $firstDirectName);
-
-            $directorsCount = count($directorsArray[2]);
-            preg_match_all(parent::PATTERN_MAIN_STAFF, $this->html, $mainStaff);
-            $firstMainStaffId = $mainStaff[2][0];
-            $firstMainStaffName = $mainStaff[3][0];
-            preg_match_all(parent::PATTERN_SECOND_MAIN_STAFF, $mainStaff[4][0], $mainStaff);
-            array_unshift($mainStaff[1], $firstMainStaffId);
-            array_unshift($mainStaff[2], $firstMainStaffName);
-
-
-            $counter = 0;
-            $mainStaffArray = [];
-            $arrCount = count($exArray[1]);
-            for ($i = 0; $i < $arrCount; $i++) {
-                $search = 'Direction';
-                if (strstr($exArray[2][$i], $search)) {
-                    $arr = [
-                        $exArray[2][$i],
-                        $directorsArray[2][$counter],
-                        $directorsArray[3][$counter]
-                    ];
-                    array_push($mainStaffArray, $arr);
-                    $counter = $counter + 1;
-                } else {
-                    $arr = [
-                        $exArray[2][$i],
-                        $mainStaff[1][$i - $counter],
-                        $mainStaff[2][$i - $counter]
-                    ];
-                    array_push($mainStaffArray, $arr);
+            preg_match_all(parent::PATTERN_SECOND_STAFF, $this->html, $arr);
+            preg_match_all(parent::PATTERN_MAIN_STAFF, $arr[2][0], $arr2);
+            $doc = new DOMDocument();
+            libxml_use_internal_errors(true);
+            @ $doc->loadHTML($arr[2][0]);
+            libxml_clear_errors();
+            $tr = $doc->getElementsByTagName('tr');
+            $keys = [];
+            $values = [];
+            $Staff = [];
+            $i = 0;
+            foreach ($tr as $t){
+                $link = new DOMDocument();
+                libxml_use_internal_errors(true);
+                $link->loadHTML($arr2[1][$i]);
+                libxml_clear_errors();
+                $a = $link->getElementsByTagName('a');
+                $creatorId = $a[0]->getAttribute('href');
+                $creatorId = explode('=', $creatorId);
+                $creatorId = end($creatorId);
+                array_push($keys, $creatorId);
+                $creatorName = $link->textContent;
+                $count = $a->length;
+                $arr3 = [];
+                $k = 0;
+                foreach ($a as $href){
+                    if ($k !== 0){
+                        $staffId = $href->getAttribute('href');
+                        $staffId = explode('/', $staffId);
+                        $boo = in_array('virtual', $staffId);
+                        if ($boo == 1){
+                            $boo = 'true';
+                        }else{
+                            $boo = 'false';
+                        }
+                        $staffId = end($staffId);
+                        $arr4 = [
+                            'virtual' => $boo,
+                            'id' => $staffId,
+                            'name' => $href->textContent
+                        ];
+                        array_push($arr3, $arr4);
+                    }
+                    $k++;
                 }
+                $staffArr = [
+                    'creator' => $creatorName,
+                    'staff' => array_values($arr3),
+                ];
+                array_push($values, $staffArr);
+                $i++;
             }
-            $mainStaff = array_combine(array_values($exArray[1]), $mainStaffArray);
-            $this->staff = $mainStaff;
+            $Staff = array_combine(array_values($keys), $values);
+            $this->staff = $Staff;
             return $this->staff;
         }
     }
