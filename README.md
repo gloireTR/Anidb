@@ -29,5 +29,11 @@ An Unofficial AniDB Parser and API (very soon)
   - Cast
   - Staff
   - Characters
+- Character Page
+  - Title
+  - Image
+  - Info Tab
+  - Creator Tab
+  - Related Animes 
 ## Our Fansub
 [AniSekai](https://anisekai.com/)
