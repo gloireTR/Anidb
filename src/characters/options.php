@@ -35,33 +35,33 @@ class Options extends Patterns{
      * @brief Character ID
      * @brief Karakter ID
      */
-    protected int $char_id;
+    protected $char_id;
 
     /**
      * @var String
      * @brief Url
      */
-    protected string $url;
+    protected $url;
     
     /**
      * @var String
      * @brief HTML Collection
      */
-     protected string $html;
+     protected $html;
 
     /**
      * @var String
      * @brief Character Title
      * @brief Karakter Adı 
      */
-    protected string $title;
+    protected $title;
 
     /**
      * @var String
      * @brief Character Image URL
      * @brief Karakterin Resim Linki
      */
-    protected string $image;
+    protected $image;
 
     /**
      * @var Array
