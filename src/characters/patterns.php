@@ -36,7 +36,7 @@ class Patterns{
     /**
      * @brief Second pattern for seiyuu
      */
-    const PATTERN_SECOND_CHAR_CREATOR = '<img alt="(.*?)" src="(.*?)"(.*?)/>@si';
+    const PATTERN_SECOND_CHAR_CREATOR = '@<img alt="(.*?)" src="(.*?)"(.*?)/>@si';
 
     /**
      * @brief Pattern for related animes
