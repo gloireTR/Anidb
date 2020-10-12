@@ -167,6 +167,11 @@ final class Characters extends Options
         preg_match_all(parent::PATTERN_CHAR_RELATED, $this->html, $arr);
         if (!isset($arr[2][0])){
             preg_match_all(parent::PATTERN_SECOND_CHAR_RELATED, $this->html, $arr);
+            if(!isset($arr[2][0])){
+                preg_match_all(parent::PATTERN_THIRD_CHAR_RELATED, $this->html, $arr);
+                 $dom->loadHTML($arr[2][0]);
+                 libxml_clear_errors();
+            }
             $dom->loadHTML($arr[2][0]);
             libxml_clear_errors();
         }else{
