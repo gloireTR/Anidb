@@ -40,7 +40,7 @@ final class Characters extends Options
         if (isset($titleArr[1][0]) || !empty($titleArr[1][0])) {
             return $titleArr[1][0];
         } else {
-            preg_match_all(parent::PATTERN_SECOND_CHAR_TITLE, $html, $titleArr);
+            preg_match_all(parent::PATTERN_SECOND_CHAR_TITLE, $this->$html, $titleArr);
             if (isset($titleArr[1][0]) || !empty($titleArr[1][0])) {
                 return $titleArr[1][0];
             } else {
