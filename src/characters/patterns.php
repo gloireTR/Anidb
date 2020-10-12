@@ -47,4 +47,9 @@ class Patterns{
      * @brief Second pattern for related
      */
     const PATTERN_SECOND_CHAR_RELATED = '@<div id="tab_main_1_1_pane" class="pane anime_appearance">(.*?)</thead>(.*?)</table>@si';
+    
+     /**
+     * @brief Third pattern for related
+     */
+    const PATTERN_THIRD_CHAR_RELATED = '@<div id="tab_main_2_1_pane" class="pane anime_appearance">(.*?)</thead>(.*?)</table>@si';
 }
