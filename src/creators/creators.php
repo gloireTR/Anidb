@@ -139,7 +139,7 @@ class Creators extends Options{
                 if ($td->nodeName == 'td'){
                     if ($td->getAttribute('class') == 'thumb' || $td->getAttribute('class') == 'thumb image'){
                         if ($td->childNodes->item(0)->nodeName == 'a'){
-                            $arr_c['image'] = $td->childNodes->item(0)->childNodes->item(1)->childNodes->item(1)->getAttribute('src');
+                            $arr_c['image'] = $td->childNodes->item(0)->childNodes->item(1)->childNodes->item(0)->getAttribute('src');
                         }else{
                             $arr_c['image'] = 'null';
                         }
