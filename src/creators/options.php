@@ -42,7 +42,7 @@ class Options extends Patterns{
      * @var String
      * @brief Url
      */
-    protected $url;
+    public $url;
 
     /**
      * @var String
