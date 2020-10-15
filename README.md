@@ -35,5 +35,10 @@ An Unofficial AniDB Parser and API (soon)
   - Info Tab
   - Creator Tab
   - Related Animes 
+- Creator Page
+  - Title
+  - Image
+  - Info Tab
+  - Voice Acting / Anime Production etc.
 ## Our Fansub
 [AniSekai](https://anisekai.com/)
