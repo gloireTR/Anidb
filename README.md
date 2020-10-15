@@ -2,7 +2,7 @@
 [![Discord](https://img.shields.io/discord/294580763742044160.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/xrbv5cV)
 [![PHP](https://img.shields.io/badge/PHP-%5E7.0-%230000FF)](https://www.php-fig.org/psr/)
 [![Packagist](https://img.shields.io/badge/Packagist-1.0-%23000000)](https://packagist.org/packages/gloire/anidb)
-# Anidb (Alpha)
+# Anidb (Beta)
 An Unofficial AniDB Parser and API (soon)
 
 ## Install
