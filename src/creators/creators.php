@@ -16,7 +16,7 @@ use DOMDocument;
 require_once __DIR__ . '/options.php';
 
 class Creators extends Options{
-    public function setCharacterId($id)
+    public function setCreatorId($id)
     {
         $this->creator_id = $id;
         $this->setUrl();
