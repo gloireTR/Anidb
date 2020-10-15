@@ -132,7 +132,7 @@ class Creators extends Options{
             $arr_c;
             $before_anime = '';
             $before_id = '';
-            if ($t->getAttribute('class') == 'rowspan'){
+            if ($t->getAttribute('class') == 'rowspan' || $t->getAttribute('class') == 'g_odd rowspan'){
                 continue;
             }
             foreach ($t->childNodes as $td){
