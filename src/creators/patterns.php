@@ -36,12 +36,12 @@ class Patterns{
     /**
      * @brief Pattern for creator animes
      */
-    const PATTERN_CREATOR_ANIMES = '@<div id="tab_main_2_1_pane" class="pane voice_acting"(.*?)</thead>(.*?)</table>@si';
+    const PATTERN_CREATOR_ANIMES = '@<table id="characterlist_';
 
     /**
      * @brief Second pattern for creator animes
      */
-    const PATTERN_SECOND_CREATOR_ANIMES = '@<div id="tab_main_1_1_pane" class="pane voice_acting">(.*?)</thead>(.*?)</table>@si';
+    const PATTERN_SECOND_CREATOR_ANIMES = '" class="characterlist">(.*?)</thead>(.*?)</table>@si';
 
     /**
      * @brief Third pattern for creator animes
@@ -52,4 +52,9 @@ class Patterns{
      * @brief Third-two pattern for creator animes
      */
     const PATTERN_THIRD_CREATOR_ANIMES_TWO = '" class="stafflist">(.*?)</thead>(.*?)</table>@si';
+
+    /**
+     * @brief  pattern for creator animes
+     */
+    const PATTERN_FOURTH_CREATOR_ANIMES = '@<table id="stafflist_minor_';
 }
