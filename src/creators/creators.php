@@ -109,13 +109,13 @@ class Creators extends Options{
         $dom = new DOMDocument();
         libxml_use_internal_errors(true);
         $control = '';
-        preg_match_all(parent::PATTERN_CREATOR_ANIMES, $this->html, $arr);
+        preg_match_all(parent::PATTERN_THIRD_CREATOR_ANIMES_ONE . $this->creator_id . parent::PATTERN_SECOND_CREATOR_ANIMES, $this->html, $arr);
         if(!isset($arr[2][0])){
-            preg_match_all(parent::PATTERN_SECOND_CREATOR_ANIMES, $this->html);
+            preg_match_all(parent::PATTERN_THIRD_CREATOR_ANIMES_ONE . $this->creator_id . parent::PATTERN_THIRD_CREATOR_ANIMES_TWO, $html, $arr);
             if (isset($arr[2][0])){
                 $dom->loadHTML($arr[2][0]);
             }else{
-                preg_match_all(parent::PATTERN_THIRD_CREATOR_ANIMES_ONE . $this->creator_id . parent::PATTERN_THIRD_CREATOR_ANIMES_TWO, $this->html, $arr);
+                preg_match_all(parent::PATTERN_FOURTH_CREATOR_ANIMES . $this->creator_id . parent::PATTERN_THIRD_CREATOR_ANIMES_TWO, $html, $arr);
                 if (isset($arr[2][0])){
                     $dom->loadHTML($arr[2][0]);
                 }else{
@@ -138,8 +138,8 @@ class Creators extends Options{
             foreach ($t->childNodes as $td){
                 if ($td->nodeName == 'td'){
                     if ($td->getAttribute('class') == 'thumb' || $td->getAttribute('class') == 'thumb image'){
-                        if ($td->childNodes->item(0)->nodeName == 'a'){
-                            $arr_c['image'] = $td->childNodes->item(0)->childNodes->item(1)->childNodes->item(0)->getAttribute('src');
+                        if ($td->childNodes->item(1)->nodeName == 'a'){
+                            $arr_c['image'] = $td->childNodes->item(0)->childNodes->item(1)->childNodes->item(1)->getAttribute('src');
                         }else{
                             $arr_c['image'] = 'null';
                         }
