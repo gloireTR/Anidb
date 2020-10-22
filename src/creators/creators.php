@@ -111,11 +111,11 @@ class Creators extends Options{
         $control = '';
         preg_match_all(parent::PATTERN_THIRD_CREATOR_ANIMES_ONE . $this->creator_id . parent::PATTERN_SECOND_CREATOR_ANIMES, $this->html, $arr);
         if(!isset($arr[2][0])){
-            preg_match_all(parent::PATTERN_THIRD_CREATOR_ANIMES_ONE . $this->creator_id . parent::PATTERN_THIRD_CREATOR_ANIMES_TWO, $html, $arr);
+            preg_match_all(parent::PATTERN_THIRD_CREATOR_ANIMES_ONE . $this->creator_id . parent::PATTERN_THIRD_CREATOR_ANIMES_TWO, $this->html, $arr);
             if (isset($arr[2][0])){
                 $dom->loadHTML($arr[2][0]);
             }else{
-                preg_match_all(parent::PATTERN_FOURTH_CREATOR_ANIMES . $this->creator_id . parent::PATTERN_THIRD_CREATOR_ANIMES_TWO, $html, $arr);
+                preg_match_all(parent::PATTERN_FOURTH_CREATOR_ANIMES . $this->creator_id . parent::PATTERN_THIRD_CREATOR_ANIMES_TWO, $this->html, $arr);
                 if (isset($arr[2][0])){
                     $dom->loadHTML($arr[2][0]);
                 }else{
