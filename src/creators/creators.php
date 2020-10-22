@@ -140,7 +140,6 @@ class Creators extends Options{
                     if ($td->getAttribute('class') == 'thumb' || $td->getAttribute('class') == 'thumb image'){
                         if ($td->childNodes->item(1)->nodeName == 'a' && $td->childNodes->item(1)->childNodes->item(0)->nodeName != 'span'){
                             $arr_c['image'] = $td->childNodes->item(1)->childNodes->item(1)->childNodes->item(0)->getAttribute('src');
-                            echo $arr_c['image'] . '<br>';
                         }else{
                             $arr_c['image'] = 'null';
                         }
