@@ -1,7 +1,7 @@
 <?php
 /**
- * Class AnidbAnime
- * @brief Variables
+ * Class Patterns
+ * @brief Patterns
  * @author gloire
  * @author libero1i
  * @link https://anisekai.com
