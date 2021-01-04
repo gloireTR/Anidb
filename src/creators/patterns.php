@@ -1,11 +1,11 @@
 <?php
 /**
  * Class Anidb Creators Patterns
- * @brief Variables
+ * @brief Patterns
  * @author gloire
  * @author libero1i
  * @link https://anisekai.com
- * @version 1.0
+ * @version 1.3
  * @since September 2020
  * @license http://www.opensource.org/licenses/mit-license.html  MIT License
  */

@@ -1,11 +1,11 @@
 <?php
 /**
  * Class AnidbAnime
- * @brief Variables
+ * @brief Options
  * @author gloire
  * @author libero1i
  * @link https://anisekai.com
- * @version 1.0
+ * @version 1.3
  * @since September 2020
  * @license http://www.opensource.org/licenses/mit-license.html  MIT License
  */
@@ -13,12 +13,12 @@ namespace AniDB\Anime;
 require_once __DIR__ . '/patterns.php';
 require_once "vendor/autoload.php";
 
-\Cloudinary::config(array(
-    "cloud_name" => "name",
-    "api_key" => "key",
-    "api_secret" => "secret",
-    "secure" => true
-));
+//\Cloudinary::config(array(
+//    "cloud_name" => 'sefacicekli',
+//    "api_key" => '916329863268252',
+//    "api_secret" => 'fjyRnhkAtK8OE9PQvzp3YwuJVMo',
+//    "secure" => true
+//));
 
 class Options extends Patterns{
     //Options

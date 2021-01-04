@@ -1,11 +1,11 @@
 <?php
 /**
- * Class Patterns
+ * Class AnidbAnime
  * @brief Patterns
  * @author gloire
  * @author libero1i
  * @link https://anisekai.com
- * @version 1.0
+ * @version 1.3
  * @since September 2020
  * @license http://www.opensource.org/licenses/mit-license.html  MIT License
  */
@@ -21,7 +21,7 @@ class Patterns{
     /**
      * @brief Pattern for Anime Image | Anime Resmi için Desen
      */
-    const PATTERN_IMAGE = '@<img alt="(.*?)" src="(.*?)"@si';
+    const PATTERN_IMAGE = '@<img loading="lazy" alt="(.*?)" src="(.*?)" height="(.*?)" width="(.*?)" itemprop="(.*?)" class="g_image g_bubble"/>@si';
 
     /**
      * @brief Pattern for Episode Count | Bölüm Sayısı için Desen
@@ -141,12 +141,12 @@ class Patterns{
     /**
      * @brief Pattern for Characters | Karakterler için Desen
      */
-    const PATTERN_CHARACTERS = '@<div class="g_section main character">(.*?)<img alt="(.*?)" src="(.*?)" class="g_image g_bubble thumbcrop"/>(.*?)</strong>(.*?)</span>(.*?)href="/character/(.*?)"><span itemprop="name">(.*?)</span></a>(.*?)<span class="g_bubble text">(.*?)</span>(.*?)title="primary voiceover" href="/creator/(.*?)" itemprop="url"><span itemprop="name">(.*?)</span>(.*?)<div class="g_section groups resized">@si';
+    const PATTERN_CHARACTERS = '@<div class="g_section main character">(.*?)<img loading="lazy" alt="(.*?)" src="(.*?)" class="g_image g_bubble thumbcrop"/>(.*?)</strong>(.*?)</span>(.*?)href="/character/(.*?)"><span itemprop="name">(.*?)</span></a>(.*?)<span class="g_bubble text">(.*?)</span>(.*?)title="primary voiceover" href="/creator/(.*?)" itemprop="url"><span itemprop="name">(.*?)</span>(.*?)<div class="g_section groups resized">@si';
 
     /**
      * @brief Second Pattern for Characters | Karakterler için Kullanılacak İkinci Desen
      */
-    const PATTERN_SECOND_CHARACTERS = '@<img alt="(.*?)" src="(.*?)" class="g_image g_bubble thumbcrop"/>(.*?)</strong>(.*?)</span>(.*?)href="/character/(.*?)"><span itemprop="name">(.*?)</span></a>(.*?)<span class="g_bubble text">(.*?)</span>(.*?)title="primary voiceover" href="/creator/(.*?)" itemprop="url"><span itemprop="name">(.*?)</span>@si';
+    const PATTERN_SECOND_CHARACTERS = '@<img loading="lazy" alt="(.*?)" src="(.*?)" class="g_image g_bubble thumbcrop"/>(.*?)</strong>(.*?)</span>(.*?)href="/character/(.*?)"><span itemprop="name">(.*?)</span></a>(.*?)<span class="g_bubble text">(.*?)</span>(.*?)title="primary voiceover" href="/creator/(.*?)" itemprop="url"><span itemprop="name">(.*?)</span>@si';
 
     /**
      * @param string $pattern The Pattern
