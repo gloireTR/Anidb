@@ -3,7 +3,7 @@
 [![PHP](https://img.shields.io/badge/PHP-%5E7.0-%230000FF)](https://www.php-fig.org/psr/)
 [![Packagist](https://img.shields.io/badge/Packagist-1.2-%23000000)](https://packagist.org/packages/gloire/anidb)
 # Anidb Parser (Beta)
-An Unofficial AniDB Parser and API (soon)
+AniDB Parser and Unofficial API (soon)
 
 ## Install
 ```composer require gloire/anidb```
