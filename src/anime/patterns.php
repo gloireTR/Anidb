@@ -1,6 +1,6 @@
 <?php
 /**
- * Class Patterns
+ * Class AnidbAnime
  * @brief Patterns
  * @author gloire
  * @author libero1i
