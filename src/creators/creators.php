@@ -1,11 +1,11 @@
 <?php
 /**
  * Class Anidb Creators
- * @brief Variables
+ * @brief Creators Setup
  * @author gloire
  * @author libero1i
  * @link https://anisekai.com
- * @version 1.0
+ * @version 1.3
  * @since September 2020
  * @license http://www.opensource.org/licenses/mit-license.html  MIT License
  */
@@ -138,10 +138,14 @@ class Creators extends Options{
             foreach ($t->childNodes as $td){
                 if ($td->nodeName == 'td'){
                     if ($td->getAttribute('class') == 'thumb' || $td->getAttribute('class') == 'thumb image'){
-                        if ($td->childNodes->item(1)->nodeName == 'a' && $td->childNodes->item(1)->childNodes->item(0)->nodeName != 'span'){
-                            $arr_c['image'] = $td->childNodes->item(1)->childNodes->item(1)->childNodes->item(0)->getAttribute('src');
+                        if (is_object($td->childNodes) && is_object($td->childNodes->item(0)->childNodes)){
+                            if ($td->childNodes->item(0)->nodeName == 'a' && $td->childNodes->item(0)->childNodes->item(1)->nodeName != 'span'){
+                                $arr_c['image'] = $td->childNodes->item(0)->childNodes->item(1)->childNodes->item(1)->getAttribute('src');
+                            }else{
+                                $arr_c['image'] = 'null';
+                            }
                         }else{
-                            $arr_c['image'] = 'null';
+                            $arr_c['image'] = 'NaN Object Error';
                         }
                     }else if ($td->getAttribute('class') == 'comment'){
                         continue;

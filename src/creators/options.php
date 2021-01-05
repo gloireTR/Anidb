@@ -1,11 +1,11 @@
 <?php
 /**
  * Class Anidb Creators Options
- * @brief Variables
+ * @brief Options
  * @author gloire
  * @author libero1i
  * @link https://anisekai.com
- * @version 1.0
+ * @version 1.3
  * @since September 2020
  * @license http://www.opensource.org/licenses/mit-license.html  MIT License
  */
@@ -32,53 +32,53 @@ class Options extends Patterns{
     /** Variables Options */
 
     /**
-     * @var Integer
+     * @var $creator_id
      * @brief Creator ID
      * @brief  ID
      */
     protected $creator_id;
 
     /**
-     * @var String
+     * @var $url
      * @brief Url
      */
     public $url;
 
     /**
-     * @var String
+     * @var $html
      * @brief HTML Collection
      */
     protected $html;
 
     /**
-     * @var String
+     * @var $title
      * @brief Creator Title
      */
     protected $title;
 
     /**
-     * @var String
+     * @var $image
      * @brief Creator Image
      * @brief Resim
      */
     protected $image;
 
     /**
-     * @var String
+     * @var $desc
      * @brief Creator Description
      * @brief Açıklama
      */
     protected $desc;
 
     /**
-     * @var Array
+     * @var $info
      * @brief Creator info tab
      * @brief bilgi tablosu
      */
     protected $info;
 
     /**
-     * @var Array
+     * @var $animes
      * @brief Creator animes
      * @brief Çalışılan animeler
      */

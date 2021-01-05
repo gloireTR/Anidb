@@ -1,11 +1,11 @@
 <?php
 /**
  * Class AnidbAnime
- * @brief Variables
+ * @brief Anime Setup
  * @author gloire
  * @author libero1i
  * @link https://anisekai.com
- * @version 1.0
+ * @version 1.3
  * @since September 2020
  * @license http://www.opensource.org/licenses/mit-license.html  MIT License
  */
@@ -16,9 +16,25 @@ require_once __DIR__ . '/options.php';
 
 final class Anime extends Options
 {
+    /**
+     * @param $cloud_name
+     * @param $key
+     * @param $secret
+     * @brief set Cloudinary Image CDN
+     */
+    public function setCloudinary($cloud_name, $key, $secret){
+        \Cloudinary::config(array(
+            "cloud_name" => $cloud_name,
+            "api_key" => $key,
+            "api_secret" => $secret,
+            "secure" => true
+        ));
+    }
+
     public function setAnimeID($aid)
     {
         $this->aid = $aid;
+        $this->setURL();
     }
 
     public function setURL()

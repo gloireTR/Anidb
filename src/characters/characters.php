@@ -1,11 +1,11 @@
 <?php
 /**
  * Class AnidbCharacters
- * @brief Variables
+ * @brief Characters Setup
  * @author gloire
  * @author libero1i
  * @link https://anisekai.com
- * @version 1.0
+ * @version 1.3
  * @since September 2020
  * @license http://www.opensource.org/licenses/mit-license.html  MIT License
  */
@@ -189,7 +189,7 @@ final class Characters extends Options
                     if($x->getAttribute('class') == 'thumb image'){
                         $id = explode('/', $x->childNodes->item(0)->getAttribute('href'));
                         array_push($keys, end($id));
-                        $arr['image'] = $x->childNodes->item(0)->childNodes->item(1)->childNodes->item(0)->getAttribute('src');
+                        $arr['image'] = $x->childNodes->item(0)->childNodes->item(1)->childNodes->item(1)->getAttribute('src');
                     }else if($x->getAttribute('class') == 'eprange' && empty($x->nodeValue)){
                         $arr[$x->getAttribute('class')] = ' ';
                     }else if($x->getAttribute('class') != 'action'){
