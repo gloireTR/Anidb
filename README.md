@@ -42,5 +42,6 @@ AniDB Parser and Unofficial API (soon)
   - Image
   - Info Tab
   - Voice Acting / Anime Production etc.
+- Users Page (soon)
 ## Our Fansub
 [AniSekai](https://anisekai.com/)
