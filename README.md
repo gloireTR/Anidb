@@ -1,5 +1,9 @@
 [![GitHub license](https://img.shields.io/github/license/gloireTR/Anidb)](https://github.com/gloireTR/Anidb/blob/master/LICENSE) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FgloireTR%2FAnidb.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FgloireTR%2FAnidb?ref=badge_shield)
 
+[![Latest Stable Version](https://poser.pugx.org/gloire/anidb/v)](//packagist.org/packages/gloire/anidb)
+[![Latest Unstable Version](https://poser.pugx.org/gloire/anidb/v/unstable)](//packagist.org/packages/gloire/anidb)
+[![composer.lock](https://poser.pugx.org/gloire/anidb/composerlock)](//packagist.org/packages/gloire/anidb)
+
 [![Discord](https://img.shields.io/discord/294580763742044160.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/asDUMGHZkU)
 [![PHP](https://img.shields.io/badge/PHP-%5E7.0-%230000FF)](https://www.php-fig.org/psr/)
 [![Packagist](https://img.shields.io/badge/Packagist-1.3-%23000000)](https://packagist.org/packages/gloire/anidb)
