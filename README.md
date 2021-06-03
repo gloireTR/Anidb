@@ -5,6 +5,7 @@
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FgloireTR%2FAnidb.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FgloireTR%2FAnidb?ref=badge_shield)
 [![Build status](https://ci.appveyor.com/api/projects/status/h8weqlp3s9iha029?svg=true)](https://ci.appveyor.com/project/gloireTR/anidb)
 [![Codeship Status for gloireTR/Anidb](https://app.codeship.com/projects/f6734878-c95d-49b8-9779-8652ce598bec/status?branch=master)](https://app.codeship.com/projects/446085)
+[![Maintainability](https://api.codeclimate.com/v1/badges/71bdf4d82762ed9c0d07/maintainability)](https://codeclimate.com/github/gloireTR/Anidb/maintainability)
 # Anidb Parser (Beta)
 AniDB Parser and Unofficial API (soon)
 
