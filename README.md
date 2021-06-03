@@ -4,7 +4,6 @@
 [![Packagist](https://img.shields.io/badge/Packagist-1.3-%23000000)](https://packagist.org/packages/gloire/anidb)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FgloireTR%2FAnidb.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FgloireTR%2FAnidb?ref=badge_shield)
 [![Build status](https://ci.appveyor.com/api/projects/status/h8weqlp3s9iha029?svg=true)](https://ci.appveyor.com/project/gloireTR/anidb)
-[![codecov](https://codecov.io/gh/gloireTR/Anidb/branch/master/graph/badge.svg?token=SMGDVHKIF8)](https://codecov.io/gh/gloireTR/Anidb)
 # Anidb Parser (Beta)
 AniDB Parser and Unofficial API (soon)
 
