@@ -3,6 +3,7 @@
 [![Latest Stable Version](https://poser.pugx.org/gloire/anidb/v)](//packagist.org/packages/gloire/anidb)
 [![Latest Unstable Version](https://poser.pugx.org/gloire/anidb/v/unstable)](//packagist.org/packages/gloire/anidb)
 [![composer.lock](https://poser.pugx.org/gloire/anidb/composerlock)](//packagist.org/packages/gloire/anidb)
+[![Gitter](https://badges.gitter.im/anisekaichat/community.svg)](https://gitter.im/anisekaichat/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 [![Discord](https://img.shields.io/discord/294580763742044160.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/asDUMGHZkU)
 [![PHP](https://img.shields.io/badge/PHP-%5E7.0-%230000FF)](https://www.php-fig.org/psr/)
